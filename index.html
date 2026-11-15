@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portfolio | Mobile & AI Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="logo" href="#top">Zahara Azalia</a>
+<ul><li><a href="#aretina">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#certification">Certification</a></li><li>
+        <a href="#aboutme">About Me</a></li><li>
+        <a href="#experiences">Experiences</a></li></ul>
+<a class="btn o" href="#kontak" style="padding:9px 20px">Contact</a>
+</div></nav>
+
+<!--HERO-->
+<header class="hero" id="top">
+<div class="blob" style="width:380px;height:380px;background:#F4B7A3;top:-80px;right:6%"></div>
+<div class="blob" style="width:340px;height:340px;background:#B9A5E8;bottom:-120px;right:22%;animation-delay:-5s"></div>
+<div class="wrap">
+<div>
+<div class="eyebrow">Mobile &amp; AI Developer</div>
+<h1>I build apps and AI systems that <span class="gt">matter</span> in the real world.</h1>
+<p class="lead">Covering fields such as healthcare, beauty, and agriculture. I focus on transforming complex problems into simple, clean, and user-friendly solutions.</p>
+<div class="cta"><a class="btn p" href="#aretina">View Projects</a><a class="btn o" href="#kontak">Let's Collaborate</a></div>
+<div class="facts"><div><b>On-device AI</b>Aretina</div><div><b>Computer Vision</b>Grape Leaf Detection</div><div><b>Cloud OCR</b>CuraPure</div></div>
+</div>
+<div class="stage"><div class="phone"><img src="assets/aretina-1.jpg" alt="Aretina app homepage"></div></div>
+</div>
+</header>
+
+<!-- PROYEK 1: ARETINA -->
+<section id="aretina"><div class="wrap proj">
+<div>
+<div class="eyebrow">Featured · Mobile App</div>
+<h2><span class="gt">Aretina</span></h2>
+<p class="tag">Early detection of eye diseases, no symptoms, no cost.</p>
+<div class="pcs">
+<div><h4>Problem</h4><p>In remote areas, access to eye doctors is limited and symptoms are hard to detect, leading to delayed awareness of eye diseases.</p></div>
+<div><h4>Solution</h4><p>Aretina analyzes eye photos directly on the phone with MobileNetV2 to classify cataracts, conjunctivitis, or normal conditions as preliminary screening before visiting a healthcare facility.</p></div>
+<div><h4>Results</h4><p>Runs 100% offline, free, and provides results in seconds.</p></div>
+</div>
+<div class="chips"><span>Flutter</span><span>MobileNetV2</span><span>On-device inference</span><span>Local history</span></div>
+<p class="note">Preliminary screening tool, not a replacement for doctor's examination.</p>
+<div class="links">
+    <a href="#">Get the App</a>
+    <a href="https://github.com/Zaharaaz/Aretina" target="_blank" rel="noopener">GitHub</a>
+</div>
+<div class="bgcard">
+<div class="blob" style="width:200px;height:200px;background:#fff;top:-40px;left:-30px;opacity:.5"></div>
+<div class="phones">
+<div class="phone"><img src="assets/aretina-1.jpg" alt="Aretina app homepage"></div>
+<div class="phone"><img src="assets/aretina-2.jpg" alt="Eye scan"></div>
+<div class="phone"><img src="assets/aretina-3.jpg" alt="Scan results"></div>
+</div>
+</div>
+</div></section>
+
+<!--PROYEK 2: DAUN ANGGUR-->
+<section id="anggur" style="padding-top:24px"><div class="wrap proj">
+<div class="bgcard" style="background:linear-gradient(135deg,#DCD2F6,#F6D2E0 55%,#FCE3D8)">
+<div class="blob" style="width:220px;height:220px;background:#fff;bottom:-60px;right:-30px;opacity:.5"></div>
+<div class="browser"><div class="bar"><i></i><i></i><i></i></div>
+<img class="shot-img" src="assets/Grape.png" alt="Tampilan aplikasi saat mendeteksi penyakit pada daun anggur"></div><div class="steps"><div><b>1</b>Business<br>Understanding</div><div><b>2</b>Data<br>Understanding</div><div><b>3</b>Data<br>Preparation</div><div><b>4</b>Modeling</div><div><b>5</b>Evaluation</div><div><b>6</b>Deployment</div></div></div>
+<div>
+<div class="eyebrow">Featured · Web App · Computer Vision</div>
+<h2>Grape leaf <span class="gt">Disease Detection</span></h2>
+<p class="tag">From photo to results in seconds.</p>
+<div class="pcs">
+<div><h4>Problem</h4><p>Grape leaf diseases are often detected late, yet early treatment determines harvest outcomes.</p></div>
+<div><h4>Solution</h4><p>A YOLOv12-based detection system with CBAM attention module focuses the model on symptomatic areas of the leaf, then deployed as a web app on Streamlit.</p></div>
+<div><h4>Process</h4><p>Built with the CRISP-DM methodology, utilizing primary data collected and processed in-house.</p></div>
+</div>
+<div class="metrics"><div><b>35</b><span>Primary Images</span></div><div><b>67,9%</b><span>mAP50</span></div><div><b>02</b><span>Disease Classes</span></div></div>
+<div class="chips"><span>Python</span><span>YOLOv12</span><span>CBAM</span><span>CRISP-DM</span><span>Streamlit</span></div>
+<div class="links">
+    <a href="https://deteksi-penyakit-daun-anggur.streamlit.app/" target="_blank" rel="noopener noreferrer">Try Me</a>
+    <a href="https://github.com/Zaharaaz/Deteksi-penyakit-daun-anggur" target="_blank" rel="noopener noreferrer">Application Code</a>
+    <a href="https://github.com/Zaharaaz/Grape-Leaf-Disease-Detection" target="_blank" rel="noopener noreferrer">Model &amp; Research</a>
+</div>
+</div></div>
+</div></section>
+
+<!--PROYEK 3: CURAPURE-->
+<section id="curapure" style="padding-top:24px"><div class="wrap">
+<div class="cur">
+<div class="blob" style="width:300px;height:300px;background:#E8A2B9;top:-100px;right:-60px;opacity:.35"></div>
+<div class="cols">
+<div>
+<div class="eyebrow">In Progress · Mobile + Backend</div>
+<h2><span class="gt">CuraPure</span><span class="badge">In Progress</span></h2>
+<p class="tag">Photo label skincare, know the ingredients that are safe and potentially pore-clogging.</p>
+<div class="chips"><span>Flutter</span><span>Riverpod / Bloc</span><span>Dio</span><span>FastAPI</span><span>Google Cloud Vision</span><span>Supabase</span><span>pg_trgm</span></div>
+</div>
+<div class="pcs" style="margin:0">
+<div><h4>Problem</h4><p>Skincare ingredient lists are hard to read: long chemical names, filled with technical terms, and difficult to assess which ones are comedogenic.</p></div>
+<div><h4>Solution</h4><p>Users simply take a photo of the label. The text is read via cloud OCR, matched against a database of ingredients using fuzzy search, and then displayed with comedogenic ratings (0 to 5) and safety status for each ingredient.</p></div>
+<div><h4>Approach</h4><p>Thin-client: the phone only handles the interface, photo capture, and upload. The OCR and ingredient matching processes run in the cloud.</p></div>
+</div>
+</div>
+<div class="flow"><span>Photo label</span><em>→</em><span>Upload multipart</span><em>→</em><span>Cloud OCR</span><em>→</em><span>Fuzzy match pg_trgm</span><em>→</em><span>Structured JSON</span><em>→</em><span>Rating &amp; status</span></div>
+<div class="status">Status: Backend OCR completed and UI is under development.</div>
+<p class="note" style="margin:16px 0 0">For reference only, not dermatological advice.</p>
+</div>
+</div></section>
+
+<!--KEAHLIAN-->
+<section id="skills"><div class="wrap">
+<div class="eyebrow">Skills</div>
+<h2 class="sec">Skills I <span class="gt">Offer</span></h2>
+<div class="sk">
+<div><h3>Designing Clean Mobile UI</h3><p>Simple, consistent, and easy-to-understand interfaces for general users.</p><small>Flutter · Dart · Riverpod / Bloc</small><small class="u">Used in: Aretina, CuraPure</small></div>
+<div><h3>Running AI on Devices</h3><p>Lightweight image classification models that work offline.</p><small>MobileNetV2 · On-device inference</small><small class="u">Used in: Aretina</small></div>
+<div><h3>Building Backend and APIs</h3><p>Connecting applications to cloud services, OCR, and search databases.</p><small>FastAPI · Supabase · pg_trgm · Dio</small><small class="u">Used in: CuraPure</small></div>
+<div><h3>Computer vision and Data Research</h3><p>From data collection to object detection model evaluation.</p><small>Python · YOLOv12 · CBAM · CRISP-DM</small><small class="u">Used in: Deteksi Daun Anggur</small></div>
+<div><h3>Turning models into products</h3><p>Models that have been trained are packaged so they can be tested directly by anyone.</p><small>Streamlit · Deployment</small><small class="u">Used in: Deteksi Daun Anggur</small></div>
+<div><h3>Designing appropriate solutions</h3><p>Determining when computation should be run on the device and when in the cloud.</p><small>On-device vs thin-client architecture</small><small class="u">Used in: Aretina, CuraPure</small></div>
+</div>
+</div></section>
+
+<!-- ===== SERTIFIKAT ===== -->
+<section id="certification"><div class="wrap">
+  <div class="eyebrow">Certifications</div>
+  <h2 class="sec">Learning that <span class="gt">continues</span></h2>
+  <div class="certs">
+
+    <div class="cert">
+      <div class="cert-img"><img src="assets/DC_1.png" alt="Sertifikat Belajar Dasar AI"></div>
+      <div class="cert-body">
+        <h3>Sertifikat Kompetensi Kelulusan Belajar Dasar AI</h3>
+        <p>Dicoding Indonesia · 2025</p>
+        <a href="https://drive.google.com/file/d/12F_lft2L-SW9AzwiMzBTjz6TmgJ15PmK/view?usp=sharing" target="_blank" rel="noopener">Lihat kredensial</a>
+      </div>
+    </div>
+
+    <div class="cert">
+      <div class="cert-img"><img src="assets/DC_2.png" alt="Sertifikat Memulai Pemrograman dengan Dart"></div>
+      <div class="cert-body">
+        <h3>Sertifikat Kompetensi Kelulusan Memulai Pemrograman dengan Dart</h3>
+        <p>Dicoding Indonesia · 2025</p>
+        <a href="https://drive.google.com/file/d/1qsbqDs4ooErdojxl6n4FcY7kyvXlUh6C/view?usp=sharing" target="_blank" rel="noopener">Lihat kredensial</a>
+      </div>
+    </div>
+
+    <div class="cert">
+      <div class="cert-img"><img src="assets/DC_3.png" alt="Programming Logic 101 Certificate"></div>
+      <div class="cert-body">
+        <h3>Sertifikat Kompetensi Kelulusan Programming Logic 101</h3>
+        <p>Dicoding Indonesia · 2025</p>
+        <a href="https://drive.google.com/file/d/1Nq8LSZwim6U5XJe1JXWym6GzxPwLx3AE/view?usp=sharing" target="_blank" rel="noopener">Lihat kredensial</a>
+      </div>
+    </div>
+   
+    <div class="cert">
+      <div class="cert-img"><img src="assets/DC_4.png" alt="Sertifikat Fundamental Flutter"></div>
+      <div class="cert-body">
+        <h3>Sertifikat Kompetensi Kelulusan Fundamental Flutter</h3>
+        <p>Dicoding Indonesia · 2025</p>
+        <a href="https://drive.google.com/file/d/1o54En68bBjXu0la5nC0kJUlPPSKrzNj0/view?usp=sharing" target="_blank" rel="noopener">Lihat kredensial</a>
+      </div>
+    </div>
+
+    <div class="cert">
+      <div class="cert-img"><img src="assets/DC_5.png" alt="Sertifikat Belajar Penerapan Machine Learning untuk Flutter"></div>
+      <div class="cert-body">
+        <h3>Sertifikat Kompetensi Kelulusan Belajar Penerapan Machine Learning untuk Flutter</h3>
+        <p>Dicoding Indonesia · 2025</p>
+        <a href="https://drive.google.com/file/d/1z5sVxqQi4L1p1pLVxY22v_nsTD_WpNfU/view?usp=sharing" target="_blank" rel="noopener">Lihat kredensial</a>
+      </div>
+    </div>
+
+    <div class="cert">
+      <div class="cert-img"><img src="assets/DC_6.png" alt="Sertifikat Belajar Prinsip Pemrograman SOLID"></div>
+      <div class="cert-body">
+        <h3>Sertifikat Kompetensi Kelulusan Belajar Prinsip Pemrograman SOLID</h3>
+        <p>Dicoding Indonesia · 2025</p>
+        <a href="https://drive.google.com/file/d/1goVcQgGTV5r8dSHbKa6gValwS1IDWNa_/view?usp=sharing" target="_blank" rel="noopener">Lihat kredensial</a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="certs-nav">
+    <button class="cn-btn" id="certPrev" aria-label="Previous certificates">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+    </button>
+    <span id="certPage">1 / 2</span>
+    <button class="cn-btn" id="certNext" aria-label="Next certificates">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"/></svg>
+    </button>
+  </div>
+</div></section>
+
+
+
+<!-- ===== ABOUT ME ===== -->
+<section id="aboutme"><div class="wrap about">
+<div class="ph">foto di sini</div>
+<div>
+<div class="eyebrow">About Me</div>
+<h2 class="sec" style="margin-bottom:18px">Technology that <span class="gt">helps</span> people.</h2>
+<p>I am an Informatics graduate from Gunadarma University, class of 2026. I enjoy building mobile apps, especially as more and more of everyday life moves onto the phone.</p>
+<p>My undergraduate thesis, Aretina, is an offline eye disease screening app. Eye conditions are common in Indonesia, yet from what I found, the few apps that exist are paid and require an internet connection. I wanted to build a free one that works anywhere. VitiSense, my grape leaf disease detector, began as a scientific paper and uses primary data I collected from the grapevines on my campus.</p>
+<p>I am also building CuraPure, a skincare ingredient scanner with Flutter, FastAPI, and Supabase. Beyond development, I have worked as a project management intern and as an [assistant role]. I am open to mobile and AI development roles, as well as project coordination and administration.</p>
+</div>
+</div></section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experiences"><div class="wrap">
+  <div class="eyebrow">Experience</div>
+  <h2 class="sec">My <span class="gt">journey</span></h2>
+  <div class="tl">
+
+    <div class="tl-item">
+      <div class="tl-date">November 2026 – Present</div>
+      <h3>Mobile &amp; AI Developer (Independent Project)</h3>
+      <div class="tl-org">CuraPure</div>
+      <ul>
+        <li>Building a skincare ingredient scanner with Flutter, a FastAPI backend, and cloud OCR.</li>
+        <li>Matching ingredients against a Supabase database using fuzzy search to return comedogenic ratings and safety status.</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-date">September 2025 – December 2025</div>
+      <h3>Project Management Intern</h3>
+      <div class="tl-org">Digital Hero Indonesia</div>
+      <ul>
+        <li>[Verb] + [what you managed or coordinated].</li>
+        <li>[Verb] + [result, with numbers if you have them].</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+      <div class="tl-date">September 2024 – October 2026</div>
+      <h3>Lead Laboratory Assistant</h3>
+      <div class="tl-org">Gunadarma University</div>
+      <ul>
+        <li>[Verb] + [what you did].</li>
+        <li>[Verb] + [result or scale, e.g. number of students].</li>
+      </ul>
+    </div>
+
+    <div class="tl-item">
+        <div class="tl-date">October 2026</div>
+        <h3>Committee Member, Publication and Documentation Division</h3>
+        <div class="tl-org">KOMPRES (Kompetisi Kreativitas Pembuatan Software), Informatics Department, Gunadarma University</div>
+        <ul>
+            <li>[Verb] + [your task in the division].</li>
+            <li>[Verb] + [outcome, e.g. event scale, number of participants, or what you delivered].</li>
+        </ul>
+    </div>
+
+    <div class="tl-item">
+        <div class="tl-date">April 2024 – August 2024</div>
+        <h3>Library Laboratory Assistant</h3>
+        <div class="tl-org">Gunadarma University Library</div>
+        <ul>
+            <li>[Verb] + [main task, e.g. Assisted students and staff with ...].</li>
+    <li>[Verb] + [responsibility or result, e.g. Maintained ... / Handled ... for ... users per day].</li>
+  </ul>
+</div>
+
+    <div class="tl-item">
+      <div class="tl-date">2022 – 2026</div>
+      <h3>Bachelor of Informatics</h3>
+      <div class="tl-org">Gunadarma University</div>
+      <ul>
+        <li>Thesis: built Aretina, an offline eye disease screening app using MobileNetV2.</li>
+        <li>Scientific paper: developed a grape leaf disease detector with YOLOv12 and CBAM, using primary data from the campus vineyard and the CRISP-DM methodology.</li>
+      </ul>
+    </div>
+
+  </div>
+</div></section>
+
+<!--CONTACT-->
+<section id="contact" style="padding-top:24px"><div class="wrap contact"><div class="box">
+<div class="eyebrow">Contact</div>
+<h2>Interested in collaborating? <span class="gt">Let's discuss.</span></h2>
+<p>I am open to internship opportunities, project collaborations, and discussions about mobile and AI development.</p>
+<div class="cta"><a class="btn p" href="mailto:zalia@gmail.com">zalia@gmail.com</a><a class="btn o" href="#">Download CV</a></div>
+<div class="soc">
+    <a href="https://github.com/Zaharaaz" target="_blank" rel="noopener noreferrer">GitHub</a>
+    <a href="https://linkedin.com/in/zaharaaz" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://instagram.com/zaharaaz_" target="_blank" rel="noopener noreferrer">Instagram</a>
+</div>
+</div></div></section>
+
+<footer>&copy; 2026 Zahara Azalia</footer>
+<script>
+(function(){
+  var box=document.querySelector('.certs');
+  if(!box)return;
+  var prev=document.getElementById('certPrev'),
+      next=document.getElementById('certNext'),
+      label=document.getElementById('certPage');
+  function step(){return box.clientWidth+20}
+  function update(){
+    var pages=Math.max(1,Math.round((box.scrollWidth+20)/step()));
+    var cur=Math.min(pages,Math.round(box.scrollLeft/step())+1);
+    label.textContent=cur+' / '+pages;
+    prev.disabled=box.scrollLeft<=2;
+    next.disabled=box.scrollLeft+box.clientWidth>=box.scrollWidth-2;
+  }
+  prev.onclick=function(){box.scrollBy({left:-step(),behavior:'smooth'})};
+  next.onclick=function(){box.scrollBy({left:step(),behavior:'smooth'})};
+  box.addEventListener('scroll',update);
+  window.addEventListener('resize',update);
+  update();
+})();
+</script>
+</body>
+</html>
