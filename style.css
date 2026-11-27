@@ -114,6 +114,9 @@ h2.sec{font-size:clamp(28px,4vw,44px)}
 .soc{display:flex;flex-wrap:wrap;gap:14px 24px;justify-content:center;margin-top:30px;font-size:14px;font-weight:600}
 footer{text-align:center;font-size:13px;color:var(--muted);padding:34px 24px 44px}
 
+.ph:has(img){padding:0}
+.ph img{object-position:center}
+
 /* ===== ANIMASI ===== */
 .gt{background-size:220% auto;animation:shine 9s ease-in-out infinite alternate}
 @keyframes shine{to{background-position:100% 0}}

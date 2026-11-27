@@ -97,17 +97,22 @@
 <div>
 <div class="eyebrow">In Progress · Mobile + Backend</div>
 <h2><span class="gt">CuraPure</span><span class="badge">In Progress</span></h2>
-<p class="tag">Photo label skincare, know the ingredients that are safe and potentially pore-clogging.</p>
+<p class="tag">Snap a skincare label and see which ingredients are safe and which may clog pores.</p>
 <div class="chips"><span>Flutter</span><span>Riverpod / Bloc</span><span>Dio</span><span>FastAPI</span><span>Google Cloud Vision</span><span>Supabase</span><span>pg_trgm</span></div>
 </div>
 <div class="pcs" style="margin:0">
-<div><h4>Problem</h4><p>Skincare ingredient lists are hard to read: long chemical names, filled with technical terms, and difficult to assess which ones are comedogenic.</p></div>
-<div><h4>Solution</h4><p>Users simply take a photo of the label. The text is read via cloud OCR, matched against a database of ingredients using fuzzy search, and then displayed with comedogenic ratings (0 to 5) and safety status for each ingredient.</p></div>
-<div><h4>Approach</h4><p>Thin-client: the phone only handles the interface, photo capture, and upload. The OCR and ingredient matching processes run in the cloud.</p></div>
+<div><h4>Problem</h4><p>Skincare ingredient lists are hard to read: the names are long, full of chemical terms, and it is difficult to tell which ones are comedogenic.</p></div>
+<div><h4>Solution</h4><p>Users simply photograph the label. The text is read through cloud OCR, matched against an ingredient database using fuzzy search, and shown with a comedogenic rating (0 to 5) and a safety status for each ingredient.</p></div>
+<div><h4>Approach</h4><p>Thin-client: the phone only handles the interface, photo capture, and upload. OCR and ingredient matching run in the cloud.</p></div>
 </div>
 </div>
-<div class="flow"><span>Photo label</span><em>→</em><span>Upload multipart</span><em>→</em><span>Cloud OCR</span><em>→</em><span>Fuzzy match pg_trgm</span><em>→</em><span>Structured JSON</span><em>→</em><span>Rating &amp; status</span></div>
-<div class="status">Status: Backend OCR completed and UI is under development.</div>
+<div class="flow"><span>Label photo</span><em>→</em><span>Multipart upload</span><em>→</em><span>Cloud OCR</span><em>→</em><span>Fuzzy match pg_trgm</span><em>→</em><span>Structured JSON</span><em>→</em><span>Rating &amp; status</span></div>
+<ul class="prog">
+  <li class="done">Backend API running</li>
+  <li class="done">All UI screens built</li>
+  <li class="now">Login in progress</li>
+  <li>Real-device testing</li>
+</ul>
 <p class="note" style="margin:16px 0 0">For reference only, not dermatological advice.</p>
 </div>
 </div></section>
@@ -199,11 +204,9 @@
   </div>
 </div></section>
 
-
-
 <!-- ===== ABOUT ME ===== -->
 <section id="aboutme"><div class="wrap about">
-<div class="ph">foto di sini</div>
+<div class="ph"><img src="assets/foto.jpg" alt="Portrait of Zahara Azalia"></div>
 <div>
 <div class="eyebrow">About Me</div>
 <h2 class="sec" style="margin-bottom:18px">Technology that <span class="gt">helps</span> people.</h2>
@@ -234,8 +237,10 @@
       <h3>Project Management Intern</h3>
       <div class="tl-org">Digital Hero Indonesia</div>
       <ul>
-        <li>[Verb] + [what you managed or coordinated].</li>
-        <li>[Verb] + [result, with numbers if you have them].</li>
+        <li>Led end-to-end delivery of a Data Control Tower, integrating data from 2 platforms into one source for management monitoring..</li>
+        <li>Wrote a 2-page PRD (scope, personas, user stories, acceptance criteria), aligning frontend, backend, and UI/UX teams.</li>
+        <li>Ran sprints, backlog, and milestones in Jira; delivered the MVP on time within 4 months.</li>
+        <li>Defined MVP features (user management, analytics dashboards, web traffic monitoring, course/event admin), prioritized by business value.</li>
       </ul>
     </div>
 
@@ -244,8 +249,11 @@
       <h3>Lead Laboratory Assistant</h3>
       <div class="tl-org">Gunadarma University</div>
       <ul>
-        <li>[Verb] + [what you did].</li>
-        <li>[Verb] + [result or scale, e.g. number of students].</li>
+        <li>Mentored 12 tutors and 24 assistants over a year of practicums, delivering tutor training and managing duty schedules.</li>
+        <li>Updated and standardized a COBOL and C practicum module (7 weeks plus exam), keeping documentation and weekly meeting minutes traceable.</li>
+        <li>Supported practicums for 360 students in Python, C, COBOL, Go, and Database Systems.</li>
+        <li>Provided first-line hotline support for student absences, make-up sessions, and other practicum issues; served as person in charge of Campus Building H and networking.</li>
+        <li>Managed the lab's Instagram account for announcements and recruitment information.</li>
       </ul>
     </div>
 
@@ -254,8 +262,9 @@
         <h3>Committee Member, Publication and Documentation Division</h3>
         <div class="tl-org">KOMPRES (Kompetisi Kreativitas Pembuatan Software), Informatics Department, Gunadarma University</div>
         <ul>
-            <li>[Verb] + [your task in the division].</li>
-            <li>[Verb] + [outcome, e.g. event scale, number of participants, or what you delivered].</li>
+          <li>Designed the certificates for participants and winners.</li>
+          <li>Created the visual content displayed on the event videotron.</li>
+          <li>Designed the winners' board used during the awarding ceremony.</li>
         </ul>
     </div>
 
@@ -264,21 +273,22 @@
         <h3>Library Laboratory Assistant</h3>
         <div class="tl-org">Gunadarma University Library</div>
         <ul>
-            <li>[Verb] + [main task, e.g. Assisted students and staff with ...].</li>
-    <li>[Verb] + [responsibility or result, e.g. Maintained ... / Handled ... for ... users per day].</li>
-  </ul>
-</div>
+          <li>Served as front-line staff, greeting and assisting library visitors.</li>
+          <li>Checked students' thesis and scientific paper files before the library accepted them, reviewing around 10 submissions per day.</li>
+          <li>Arranged books on the shelves according to their call numbers and positions.</li>
+          <li>Helped users resolve account issues, including password account resets.</li>
+        </ul>
+      </div>
 
     <div class="tl-item">
       <div class="tl-date">2022 – 2026</div>
       <h3>Bachelor of Informatics</h3>
       <div class="tl-org">Gunadarma University</div>
       <ul>
-        <li>Thesis: built Aretina, an offline eye disease screening app using MobileNetV2.</li>
-        <li>Scientific paper: developed a grape leaf disease detector with YOLOv12 and CBAM, using primary data from the campus vineyard and the CRISP-DM methodology.</li>
+         <li>Thesis: built Aretina, an offline eye disease screening app using MobileNetV2.</li>
+         <li>Scientific paper: developed a grape leaf disease detector with YOLOv12 and CBAM, using primary data from the campus vineyard and the CRISP-DM methodology.</li>
       </ul>
     </div>
-
   </div>
 </div></section>
 
